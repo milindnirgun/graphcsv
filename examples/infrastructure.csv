@@ -1,0 +1,15 @@
+parent, child
+Load Balancer, Webserver
+Webserver,OAM
+OAM,OID
+Webserver,App Server
+App Server,App DB 
+App Server, Spectrum
+App Server, IIS
+App Server, Adobe EM
+App Server, BI Publisher
+App DB,OID
+OID, Comp DB
+Adobe EM, Comp DB
+IIS, Comp DB
+Spectrum, Comp DB

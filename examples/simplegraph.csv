@@ -1,0 +1,14 @@
+parent, child
+father, son
+father, daughter
+
+
+mother, son
+mother, daughter
+
+grandfather,father
+grandfather, son
+grandfather, daughter
+
+
+
