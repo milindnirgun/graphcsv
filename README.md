@@ -39,6 +39,18 @@ Let's walk thru one of the examples in the round_table.csv file. The CSV looks l
 |King Arthur | Sir Bedevere the Wise |
 
 This will generate the dependency graph shown below. Look at the other examples provided and run them to see the results.
-![Dependency Graph](
+
+![alt text](https://github.com/milindnirgun/graphcsv/blob/master/examples/round_table.png)
+
+## Limitations
+Things that GraphCSV does not do that are supported by Graphviz -
+1. Cannot add attributes to nodes and edges. This allows changing shapes, colors, fonts etc of nodes and edges.
+2. Draws only Digraphs, i.e. directional graphs
+3. Cannot specify _rank_ or _subgroup_ which allows some nodes to be placed at the same level in the hierarchy.
+
+Graphviz is a very powerful software with lot of capabilities. GraphCSV is based on the [python package of the same name](https://graphviz.readthedocs.io/en/stable/index.html), which offers a subset of the features in the original Graphviz. In order to keep the usage simple and allow the user to draw dependency graphs quickly using a spreadsheet, GraphCSV sacrifices 
+a lot of those features. I will add a few more basic ones and remove the limitations above as time permits. Others are most welcome to contribute and take it further.
+
+Hope this will be useful to anyone who wants to use it.
 
 
